@@ -194,3 +194,8 @@ cython_debug/
 .cursorindexingignore
 
 test/
+bigmhc/
+iedb/
+*.txt
+Dockerfile
+requirements.txt
