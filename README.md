@@ -15,20 +15,28 @@ pip
 
 ## Installation
 <pre><code>pip -r requirements.txt</code></pre>
-** Or **
+**Or**
 <pre><code>conda env create -f environment.yml</code></pre>
 
-## Usage 
+## Command Line Usage 
+After installation, run the CLI tool:
+Parameters
+<pre><code>
+-i : input txt file
+-o : output dictionary
+-n : sample name
+</code></pre>
+
+<pre><code>
+twneop -i <input_file> -o <output_dir> -n <run_name>
+</code></pre>
+### Example
 <pre><code>
 python [PATH]/TSA_immuno_prediction/tsa_immuno_prediction/libs/main.py \
 -i [PATH]/myfilecopy3.txt \
 -o [PATH]/work1791/cindy2270/web/TSA_immuno_prediction/test/test_file/ \
 -n 02
 </code></pre>
-### Arguments description:
-<pre><code>
 
--i : input txt file
--o : output dictionary
--n : sample name
-</code></pre>
+## Author
+Developed by Yu Hsuan Tseng as part of tumor neoantigen research pipeline.
