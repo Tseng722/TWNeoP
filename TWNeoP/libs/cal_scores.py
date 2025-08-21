@@ -116,10 +116,10 @@ def calculate_hydro(peptide,hla,mer,df_weight):
 	return hydro_score_avg,hydro_final
 
 def hydro(df):
-    df_9_mer = pd.read_excel("/CMU_TSA/cindy2270/IEDB/score_TCR/abg2200_Data_file_S2.xlsx",sheet_name=0,index_col=None)
-    df_8_mer = pd.read_excel("/CMU_TSA/cindy2270/IEDB/score_TCR/abg2200_Data_file_S2.xlsx",sheet_name=1,index_col=None)
-    df_10_mer = pd.read_excel("/CMU_TSA/cindy2270/IEDB/score_TCR/abg2200_Data_file_S2.xlsx",sheet_name=2,index_col=None)
-    df_11_mer = pd.read_excel("/CMU_TSA/cindy2270/IEDB/score_TCR/abg2200_Data_file_S2.xlsx",sheet_name=3,index_col=None)
+    df_9_mer = pd.read_excel(f"/{PACKAGE_DIR}/supporting_data/hydro/abg2200_Data_file_S2.xlsx",sheet_name=0,index_col=None)
+    df_8_mer = pd.read_excel(f"/{PACKAGE_DIR}/supporting_data/hydro/abg2200_Data_file_S2.xlsx",sheet_name=1,index_col=None)
+    df_10_mer = pd.read_excel(f"/{PACKAGE_DIR}/supporting_data/hydro/abg2200_Data_file_S2.xlsx",sheet_name=2,index_col=None)
+    df_11_mer = pd.read_excel(f"/{PACKAGE_DIR}/supporting_data/hydro/abg2200_Data_file_S2.xlsx",sheet_name=3,index_col=None)
     df_hydro = pd.DataFrame()
     for i in range(len(df)):
         pep = df.at[i,'Peptide']
