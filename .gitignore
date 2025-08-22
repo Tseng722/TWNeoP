@@ -196,6 +196,7 @@ cython_debug/
 test/
 bigmhc/
 iedb/
+predictor/
 *.txt
 Dockerfile
 requirements.txt
