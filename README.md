@@ -1,4 +1,5 @@
 # TWNeoP: A Framework for Neoantigen Prioritization
+(The package and its related technologies are currently under review by a journal. Therefore, part of the source code has not yet been released to the public.)
 
 TWNeoP is a LightGBM-based framework for prioritizing immunogenic neoantigens in personalized cancer vaccines and infectious disease immunotherapies. It integrates features like binding affinity, hydrophobicity, and sequence homology to predict peptide–MHC (pMHC) immunogenicity. Enhanced by ensemble learning with DeepHLApan and BigMHC scores, TWNeoP is trained on curated datasets (IEDB, PRIME, DeepNeo), achieving an AUC of 0.88 and a positive predictive value of ~0.9 on an independent test set. Case studies on tumor-associated neoantigens and tuberculosis vaccine candidates demonstrate its versatility. Open-source and scalable, TWNeoP streamlines vaccine development and accelerates precision immunotherapy.
 
@@ -28,7 +29,7 @@ Parameters
 </code></pre>
 
 <pre><code>
-twneop -i <input_file> -o <output_dir> -n <run_name>
+twneop -i [input_file] -o [output_dir] -n [run_name]
 </code></pre>
 ### Example
 <pre><code>
